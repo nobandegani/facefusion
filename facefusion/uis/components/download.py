@@ -3,7 +3,7 @@ from typing import List, Optional
 import gradio
 
 import facefusion.choices
-from facefusion import content_analyser, face_classifier, face_detector, face_landmarker, face_masker, face_recognizer, state_manager, voice_extractor, wording
+from facefusion import face_classifier, face_detector, face_landmarker, face_masker, face_recognizer, state_manager, voice_extractor, wording
 from facefusion.filesystem import get_file_name, resolve_file_paths
 from facefusion.processors.core import get_processors_modules
 from facefusion.types import DownloadProvider
@@ -28,7 +28,6 @@ def listen() -> None:
 def update_download_providers(download_providers : List[DownloadProvider]) -> gradio.CheckboxGroup:
 	common_modules =\
 	[
-		content_analyser,
 		face_classifier,
 		face_detector,
 		face_landmarker,
