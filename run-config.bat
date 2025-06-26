@@ -7,7 +7,7 @@ call conda deactivate
 call conda activate facefusion
 
 :: Run your script
-python facefusion.py run --open-browser --config-path E:\NIL\spark\python\InoGenie\configs\configs\facefusion.ini
+python facefusion.py run --open-browser --config-path "E:\\NIL\\spark\\python\\InoGenie\\configs\\facefusion.ini"
 
 :: Optional: Pause to see output
 pause
